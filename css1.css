@@ -1,0 +1,170 @@
+#sm {
+	text-align: center;
+	width: calc(100% - 20px);
+	margin: 10px;
+	margin-bottom: 20px;
+	display: table;
+	border-spacing: 10px 0;
+}
+
+.sm {
+	padding: 10px;
+	margin: 10px 30px;
+	display: table-cell;
+	border: dashed 2px;
+	border-radius: 30px;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+	background: linear-gradient(146deg, #FABBD9 12%, #C2ADFF 98%);
+	transition: all 0.2s ease-in-out;
+}
+
+.sm:hover {
+	transform: scale(1.1);
+}
+
+
+.sm img {
+	width: 60px;
+	height: 60px;
+}
+
+.totop_buttom {
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	right: 0px;
+	bottom: 40px;
+	position: fixed;
+	cursor: pointer;
+	opacity: .8;
+	transition: all 0.2s linear;
+}
+
+.totop_buttom:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+.diner_photo {
+	width: 250px;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.address {
+	font-size: 20px;
+	align-items: center;
+}
+
+.link {
+	color: blue;
+
+}
+
+.link div {
+	font-size: 22px;
+}
+
+.link:hover {
+	text-decoration: underline;
+	color: purple;
+}
+
+.title-container {
+	font-size: 38px;
+	width: 200px;
+	padding: 10px;
+	margin: 10px 20px;
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	text-shadow: 1px 1px 3px #00000054;
+	box-sizing: border-box;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
+.food-box {
+	width: calc(100% - 20px);
+	margin: 20px;
+	padding: 20px;
+	background: #e2ebf0;
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	box-sizing: border-box;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+	border-radius: 10px 30px 50px;
+}
+
+.food-box-div {
+	width: calc(100% - 350px);
+	float: left;
+	text-align: left;
+	margin: 5px;
+	padding: 12px;
+	font-size: 17px;
+	line-height: 32px;
+	box-sizing: border-box;
+}
+
+.food-box h1 {
+	padding: 10px;
+	margin: 10px 15px;
+	font-size: 25px;
+	font-weight: bolder;
+	line-height: 28px;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	background-image: linear-gradient(to top, #145b7717 0%, #ffffff30 100%);
+}
+
+.food-box-left {
+	float: left;
+	width: 300px;
+	margin: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.food-box-right {
+	float: right;
+	width: 300px;
+	margin: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/* 手機版開始 */
+
+@media screen and (max-width: 1000px) {
+
+	.sm {
+		margin: 10px 0;
+		padding: 5px 10px;
+		display: block;
+	}
+
+	.food-box {
+		display: block;
+	}
+
+	.food-box-left,
+	.food-box-right {
+		float: none;
+		width: calc(100% - 20px);
+		margin: 10px;
+	}
+
+	.food-box-div {
+		width: calc(100% - 24px);
+		float: none;
+	}
+
+	.diner_photo {
+		max-width: 100%;
+	}
+
+	.totop_buttom {
+		display: none;
+	}
+
+}
+
+/* 手機版結束 */

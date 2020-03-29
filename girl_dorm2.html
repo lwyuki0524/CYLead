@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>恩慈小門－中原食衣住行</title>
+	<meta property="og:image" content="img/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#d8e7f9">
+	<meta name="msapplication-navbutton-color" content="#d8e7f9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#d8e7f9">
+	<link rel="icon" sizes="128x128" href="favicon.png">
+	<link rel="Shortcut Icon" href="favicon.ico">
+	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" type="text/css" href="css1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.rwdImageMaps.min.js"></script>
+	<script src="js/jquery.maphilight.min.js"></script>
+	<script src="js/scrollgress.min.js"></script>
+	<script src="js/js.js"></script>
+	<style>
+		body {
+			background: #ebf2e7;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		// HTML MAP RWD 網頁影像地圖自適應
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+		// HTML MAP 網頁影像地圖選取特效
+		$(function() {
+			$('.mapsizer').maphilight({
+				fade: false
+			});
+		});
+
+	</script>
+	<!--手機版導覽開始-->
+
+	<a id="mo-nav" onclick="unfoldoc('doNotDisplayoc');"></a>
+	<div class="mo-nav" id="doNotDisplayoc">
+		<a href="index.html" title="網站首頁">
+			<div class="mo-nav-a">網站首頁</div>
+		</a>
+		<div class="mo-nav-A">區域</div>
+		<a href="gate.html" title="校門口">
+			<div class="mo-nav-a">校門口</div>
+		</a>
+		<a href="business_door.html" title="商學小門">
+			<div class="mo-nav-a">商學小門</div>
+		</a>
+		<a href="girl_dorm1.html" title="良善小門">
+			<div class="mo-nav-a">良善小門</div>
+		</a>
+		<a href="girl_dorm2.html" title="恩慈小門">
+			<div class="mo-nav-a">恩慈小門</div>
+		</a>
+	</div>
+	<!--手機版導覽結束-->
+
+	<!--左側欄開始-->
+	<aside class="aside">
+		<a href="index.html" title="LOGO，通往網站首頁"><img class="logo-img" src="img/logo.jpg"></a>
+		<div class="menu">
+			<a href="index.html" title="網站首頁">
+				<div class="menu-a-li">網站首頁</div>
+			</a>
+			<div class="menu-A">區域</div>
+			<ul class="menu-a">
+				<!--分隔-->
+				<li><a href="gate.html" title="校門口">
+						<div class="menu-a-li">校門口</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="gate.html#食">食</a></li>
+						<li><a href="gate.html#衣">衣</a></li>
+						<li><a href="gate.html#住">住</a></li>
+						<li><a href="gate.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="business_door.html" title="商學小門">
+						<div class="menu-a-li">商學小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="business_door.html#食">食</a></li>
+						<li><a href="business_door.html#住">住</a></li>
+						<li><a href="business_door.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="girl_dorm1.html" title="良善小門">
+						<div class="menu-a-li">良善小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="girl_dorm1.html#食">食</a></li>
+						<li><a href="girl_dorm1.html#衣">衣</a></li>
+						<li><a href="girl_dorm1.html#住">住</a></li>
+						<li><a href="girl_dorm1.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="girl_dorm2.html" title="恩慈小門">
+						<div class="menu-a-li">恩慈小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="girl_dorm2.html#食">食</a></li>
+						<li><a href="girl_dorm2.html#住">住</a></li>
+						<li><a href="girl_dorm2.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+			</ul>
+		</div>
+	</aside>
+	<!--左側欄結束-->
+
+	<article>
+		<!--上方標題欄開始-->
+			<header class="header">恩慈小門－中原食衣住行</header>
+		<!--上方標題欄結束-->
+
+		<!--移到最上面-->
+		<div>
+			<a onclick="window.scrollTo(0,0);return false;"><img src="img/totop_buttom.png" title="到最上面" class="totop_buttom"></a>
+		</div>
+		<!--移到最上面-->
+
+
+		<!--主內容開始-->
+		<div class="flex-container">
+			<div id="sm">
+				<a href="#食" class="sm"><img src="img/eat.png" alt="食"></a>
+				<a href="#住" class="sm"><img src="img/live.png" alt="住"></a>
+				<a href="#行" class="sm"><img src="img/walk.png" alt="行"></a>
+			</div>
+			<h1 class="flex-container-h1">中原大學恩慈小門地圖</h1>
+			<!--地圖開始-->
+			<div class="flex-container-box">
+				<img class="mapsizer" src="img/map_girl_dorm2.png" usemap="#image-map">
+				<map name="image-map">
+					<area target="" alt="丼心丼" title="丼心丼" coords="643,561,617,523,618,481,639,465,660,470,668,498,658,527" shape="poly">
+					<area target="" alt="品香水餃店" title="品香水餃店" coords="607,473,587,443,582,411,593,385,612,377,627,391,634,409,626,435" shape="poly">
+					<area target="" alt="園緣通吃館" title="園緣通吃館" coords="572,395,550,368,546,341,553,316,565,308,586,312,597,331,590,363" shape="poly">
+					<area target="" alt="奶bar早午餐" title="奶bar早午餐" coords="665,376,647,354,639,329,647,300,665,284,682,292,691,316,682,346" shape="poly">
+					<area target="" alt="燒蛋餒蛋餅" title="燒蛋餒蛋餅" coords="726,428,708,402,702,368,715,341,737,335,753,358,748,392" shape="poly">
+				</map>
+			</div>
+			<!--地圖結束-->
+			<a name="食">
+				<h1 class="title-container">食</h1>
+			</a>
+
+
+			<div class="food-box">
+				<div class="food-box-left">
+					<!--下面要放食物或招牌照片-->
+					<img src="img/素材照片庫/恩慈小門_丼心丼中原總店.jpg" alt="恩慈小門_丼心丼中原總店" class="diner_photo">
+					<!--上面要放食物或招牌照片-->
+					<h1>丼心丼中原總店</h1>
+				</div>
+
+				<div class="food-box-div">
+					<a href="https://mnya.tw/yo/word/809.html" title="20181005【中原美食】丼心丼中原店" class="link">
+						<div>📌參考連結:20181005【中原美食】丼心丼中原店</div>
+					</a>
+					<br><span class="address">地址:320桃園市中壢區大仁二街38號</span>
+				</div>
+			</div>
+
+			<!--分隔-->
+			<div class="food-box">
+				<div class="food-box-right">
+
+					<!--下面要放食物或招牌照片-->
+					<img src="img/素材照片庫/恩慈小門_中原品香鍋貼水餃專賣店.jpg" alt="恩慈小門_中原品香鍋貼水餃專賣店" class="diner_photo">
+					<!--上面要放食物或招牌照片-->
+
+					<h1>中原品香鍋貼水餃專賣店</h1>
+				</div>
+				<div class="food-box-div">
+					<a href="https://mnya.tw/yo/word/821.html" title="20181019【中原美食】中原品香鍋貼水餃專賣店" class="link">
+						<div>📌參考連結:20181019【中原美食】中原品香鍋貼水餃專賣店</div>
+					</a>
+					<br><span class="address">地址:32081桃園市中壢區大仁二街42號</span>
+				</div>
+			</div>
+
+
+
+			<!--分隔-->
+			<div class="food-box">
+				<div class="food-box-left">
+
+					<!--下面要放食物或招牌照片-->
+					<img src="img/素材照片庫/恩慈小門_燒蛋餒古早味手工蛋餅.jpg" alt="恩慈小門_燒蛋餒古早味手工蛋餅" class="diner_photo">
+					<!--上面要放食物或招牌照片-->
+
+					<h1>燒蛋餒古早味手工蛋餅</h1>
+				</div>
+				<div class="food-box-div">
+					<a href="http://loftwarm.pixnet.net/blog/post/348564670-%E7%87%92%E8%9B%8B%E9%A4%92%E5%8F%A4%E6%97%A9%E5%91%B3%E8%9B%8B%E9%A4%85%E6%97%A9%E9%BB%9E%E6%8E%A8%E8%96%A6-%E5%8E%9A%E5%AF%A6%E4%BB%BD%E9%87%8F%E7%9A%84%E5%82%B3%E7%B5%B1" title="燒蛋餒古早味蛋餅早點推薦-厚實份量的傳統" class="link">
+						<div>📌參考連結:燒蛋餒古早味蛋餅早點推薦-厚實份量的傳統</div>
+					</a>
+					<br><span class="address">地址:320桃園市中壢區環中東路708巷42號</span>
+				</div>
+			</div>
+
+
+			<!--分隔-->
+			<div class="food-box">
+				<div class="food-box-right">
+
+					<!--下面要放食物或招牌照片-->
+					<img src="img/素材照片庫/恩慈小門_奶Bar.jpg" alt="恩慈小門_奶Bar" class="diner_photo">
+					<!--上面要放食物或招牌照片-->
+
+					<h1>奶Bar</h1>
+				</div>
+				<div class="food-box-div">
+					<a href="http://jinglejingle.pixnet.net/blog/post/381349024-%E6%A1%83%E5%9C%92%E4%B8%AD%E5%A3%A2-%E5%A5%B6bar%E4%BC%99%E9%A3%9F%E3%80%82%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8%E8%B6%85%E5%A4%AF%E6%97%A9%E5%8D%88%E9%A4%90%EF%BC%8C" title="桃園中壢-奶BAR伙食" class="link">
+						<div>📌參考連結:桃園中壢-奶BAR伙食</div>
+					</a>
+					<br><span class="address">地址:320桃園市中壢區環中東路708巷32號</span>
+				</div>
+			</div>
+
+
+
+
+			<div class="food-box">
+				<div class="food-box-left">
+
+					<!--下面要放食物或招牌照片-->
+					<img src="img/素材照片庫/恩慈小門_園緣通吃館.jpg" alt="恩慈小門_園緣通吃館" class="diner_photo">
+					<!--上面要放食物或招牌照片-->
+
+					<h1>園緣通吃館</h1>
+				</div>
+				<div class="food-box-div">
+					<a href="http://teddy04160416.pixnet.net/blog/post/162220631-%E2%99%A1%E6%97%A9%E5%8D%88%E9%A4%90%E6%8A%97%E6%BC%B2%E5%A4%AF%E4%BB%94%E5%85%A7%E5%A5%BD%E9%81%B8%E6%93%87--%E5%9C%93%E7%B7%A3%E9%80%9A%E5%90%83%E9%A4%A8%28%E6%A1%83%E5%9C%92" title="♡早午餐抗漲夯仔內好選擇--圓緣通吃館(桃園縣中壢市素食" class="link">
+						<div>📌參考連結:♡早午餐抗漲夯仔內好選擇--圓緣通吃館(桃園縣中壢市素食</div>
+					</a>
+					<br><span class="address">地址:320桃園縣中壢市環中東路708巷68號</span>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="flex-container">
+
+			<a name="住">
+				<h1 class="title-container">住</h1>
+			</a>
+
+			<div class="food-box">
+				<div class="food-box-left">
+					<img src="img/mixrent.jpg" class="diner_photo">
+					<h1>MixRent租屋搜尋</h1>
+				</div>
+
+				<div class="food-box-div">
+					<a href="https://tw.mixrent.com/search.php?q=%E4%B8%AD%E5%8E%9F%E5%A4%A7%E5%AD%B8" title="中原大學租屋資訊 - MixRent租屋搜尋" class="link">
+						<div>
+							📌參考連結:中原大學租屋資訊 - MixRent租屋搜尋
+
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<!--分隔-->
+			<div class="food-box">
+				<div class="food-box-right">
+
+					<h1>學校宿舍</h1>
+				</div>
+				<div class="food-box-div">
+					📌中原除了很多美食跟商店以外，學校也有為了離家遙遠的同學所興建的良善和恩慈宿舍喔! 不但離學校很近，底下還有學生餐廳，除了有獨立衛浴的寢室，還有增設自習室跟研討室以及寬闊的交誼廳，不但能夠和同學互相交流，也可以認識其他來自不同科系的同學，如果身處異鄉的遊子們找不到良好的住處的話，中原大學良善和恩慈宿舍是你的好選擇，在一天結束之後好好的在宿舍休息，一起充滿精神度過在中原的每一天吧!
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="flex-container">
+
+			<a name="行">
+				<h1 class="title-container">行</h1>
+			</a>
+
+			<div class="food-box">
+				<div class="food-box-left">
+					<img src="img/Taiwan-HighSpeedRail.jpg" class="diner_photo">
+					<h1>高鐵</h1>
+				</div>
+				<div class="food-box-div">
+
+					<div class="intro">
+						📌離家很遠卻又想家的同學如果假日想回家探望父母親的話，難免都必須搭高鐵，而中原大學也有前往桃園高鐵的方法喔!
+						<ul>
+							<li>
+								搭車地點：至高鐵桃園站一樓大廳5號出口，前往5號公車月台搭乘高鐵快捷公車－170高鐵桃園站－中壢。
+
+							</li>
+							<li>
+								路程：約20~30分鐘一班車，20分鐘可到達中壢市區，於「火車站前」下車，步行至「農會站」轉搭公車至中原。
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--主內容結束-->
+		<footer>中原食衣住行© 2018<br>祝您有個美好的一天！</footer>
+	</article>
+	<script>
+		//閱讀進度條
+		$(function() {
+
+			$('body').scrollgress({
+				height: '4px',
+				color: '#ea0000cc',
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>

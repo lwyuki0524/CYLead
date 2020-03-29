@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>首頁－中原食衣住行</title>
+	<meta property="og:image" content="img/logo.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#d8e7f9">
+	<meta name="msapplication-navbutton-color" content="#d8e7f9">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#d8e7f9">
+	<link rel="icon" sizes="128x128" href="favicon.png">
+	<link rel="Shortcut Icon" href="favicon.ico">
+	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" type="text/css" href="css1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.rwdImageMaps.min.js"></script>
+	<script src="js/jquery.maphilight.min.js"></script>
+	<script src="js/scrollgress.min.js"></script>
+	<script src="js/js.js"></script>
+</head>
+
+<body>
+	<script>
+		// HTML MAP RWD 網頁影像地圖自適應
+		$(document).ready(function(e) {
+			$('img[usemap]').rwdImageMaps();
+		});
+		// HTML MAP 網頁影像地圖選取特效
+		$(function() {
+			$('.mapsizer').maphilight({
+				fade: false
+			});
+		});
+
+	</script>
+	<!--手機版導覽開始-->
+
+	<a id="mo-nav" onclick="unfoldoc('doNotDisplayoc');"></a>
+	<div class="mo-nav" id="doNotDisplayoc">
+		<a href="index.html" title="網站首頁">
+			<div class="mo-nav-a">網站首頁</div>
+		</a>
+		<div class="mo-nav-A">區域</div>
+		<a href="gate.html" title="校門口">
+			<div class="mo-nav-a">校門口</div>
+		</a>
+		<a href="business_door.html" title="商學小門">
+			<div class="mo-nav-a">商學小門</div>
+		</a>
+		<a href="girl_dorm1.html" title="良善小門">
+			<div class="mo-nav-a">良善小門</div>
+		</a>
+		<a href="girl_dorm2.html" title="恩慈小門">
+			<div class="mo-nav-a">恩慈小門</div>
+		</a>
+	</div>
+	<!--手機版導覽結束-->
+
+	<!--左側欄開始-->
+	<aside class="aside">
+		<a href="index.html" title="LOGO，通往網站首頁"><img class="logo-img" src="img/logo.jpg"></a>
+		<div class="menu">
+			<a href="index.html" title="網站首頁">
+				<div class="menu-a-li">網站首頁</div>
+			</a>
+			<div class="menu-A">區域</div>
+			<ul class="menu-a">
+				<!--分隔-->
+				<li><a href="gate.html" title="校門口">
+						<div class="menu-a-li">校門口</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="gate.html#食">食</a></li>
+						<li><a href="gate.html#衣">衣</a></li>
+						<li><a href="gate.html#住">住</a></li>
+						<li><a href="gate.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="business_door.html" title="商學小門">
+						<div class="menu-a-li">商學小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="business_door.html#食">食</a></li>
+						<li><a href="business_door.html#住">住</a></li>
+						<li><a href="business_door.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="girl_dorm1.html" title="良善小門">
+						<div class="menu-a-li">良善小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="girl_dorm1.html#食">食</a></li>
+						<li><a href="girl_dorm1.html#衣">衣</a></li>
+						<li><a href="girl_dorm1.html#住">住</a></li>
+						<li><a href="girl_dorm1.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+				<li><a href="girl_dorm2.html" title="恩慈小門">
+						<div class="menu-a-li">恩慈小門</div>
+					</a>
+					<ul class="menu-sub">
+						<li><a href="girl_dorm2.html#食">食</a></li>
+						<li><a href="girl_dorm2.html#住">住</a></li>
+						<li><a href="girl_dorm2.html#行">行</a></li>
+					</ul>
+				</li>
+				<!--分隔-->
+			</ul>
+		</div>
+	</aside>
+	<!--左側欄結束-->
+	<article>
+		<!--上方標題欄開始-->
+		<header class="header">首頁－中原食衣住行</header>
+		<!--上方標題欄結束-->
+
+		<!--移到最上面-->
+		<div>
+			<a onclick="window.scrollTo(0,0);return false;"><img src="img/totop_buttom.png" title="到最上面" class="totop_buttom"></a>
+		</div>
+		<!--移到最上面-->
+
+		<!--主內容開始-->
+		<div class="flex-container">
+			<h1 class="flex-container-h1">中原大學全區地圖</h1>
+			<!--地圖開始-->
+			<div class="flex-container-box">
+				<img class="mapsizer" src="img/map.png" usemap="#image-map">
+				<map name="image-map">
+					<area target="" alt="北區停車場" title="北區停車場" coords="93,576,112,591,133,616,145,647,164,648,196,628,177,608,154,589,139,569,118,554,105,554" shape="poly">
+
+					<area target="_blank" alt="校門口" title="校門口" href="gate.html" coords="158,502,290,463,361,459,409,478,447,533,477,594,485,655,465,687,428,701,361,695,278,676,212,658,141,639,104,612,89,585,94,560,116,531" shape="poly">
+					<area target="_blank" alt="良善小門" title="良善小門" href="girl_dorm1.html" coords="538,563,515,577,500,606,498,641,507,669,527,695,563,715,615,721,643,721,664,701,677,662,668,619,642,590,605,569,574,557" shape="poly">
+					<area target="_blank" alt="恩慈小門" title="恩慈小門" href="girl_dorm2.html" coords="705,626,744,645,789,635,810,602,816,564,787,523,759,503,712,498,685,518,674,553,678,595" shape="poly">
+					<area target="_blank" alt="商學小門" title="商學小門" href="business_door.html" coords="533,317,584,359,628,380,668,380,711,370,770,359,806,339,832,313,835,282,819,255,786,234,723,215,654,209,600,206,551,205,517,219,494,241,494,267" shape="poly">
+					<area target="" alt="西區第一停車場" title="西區第一停車場" coords="991,613,895,574" shape="rect">
+					<area target="" alt="西區第二停車場" title="西區第二停車場" coords="898,640,942,635,982,626,999,625,1006,645,1006,669,993,674,964,680,937,683,918,684,901,679" shape="poly">
+					<area target="" alt="體育園區停車場" title="體育園區停車場" coords="385,147,433,215,470,196,431,130,407,130" shape="poly">
+					<area target="" alt="信實宿舍停車場" title="信實宿舍停車場" coords="801,189,835,188,865,196,882,210,880,230,867,237,831,230,808,223,801,213" shape="poly">
+					<area target="" alt="信實宿舍停車場" title="信實宿舍停車場" coords="901,243,899,270,916,287,948,296,968,301,970,282,968,264,953,252" shape="poly">
+					<area target="" alt="U-BIKE中原站" title="U-BIKE中原站" coords="147,495,24" shape="circle">
+				</map>
+			</div>
+			<!--地圖結束-->
+			<h1 class="flex-container-h1">專案介紹</h1>
+			<!--專案介紹開始-->
+			<div class="flex-container-box">大家好，我們是「中原食衣住行」。<br>
+				剛進中原大學的新生們對校園有什麼困擾嗎？<br>
+				是不是常常不知道午餐吃什麼？<br>
+				通勤的孩子們對中原的通勤路線夠了解嗎？<br>
+				有空堂好無聊啊！！！要去哪呢！？<br>
+				我們小組為了幫助新生們能更熟悉校園，製作了這個網站。<br>
+				在網站中我們會依照「食、衣、住、行」來分類新生們需要的資料。<br>
+				只要點選地圖中的區域，你就能看到這個地方的大小事唷！<br>
+			</div>
+			<!--專案介紹結束-->
+			<h1 class="flex-container-h1">介紹影片</h1>
+			<!--影片開始-->
+			<div class="flex-container-box">
+				<iframe src="https://www.youtube.com/embed/nNcvAJ40M-w" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+			</div>
+			<!--影片結束-->
+			<h1 class="flex-container-h1">好站連結</h1>
+			<!--好站連結開始-->
+			<div class="flex-container-box">
+				<a href="http://www1.cycu.edu.tw/" target="_blank">
+					<div class="good_link">
+						<div class="good_link_icon"></div>中原大學 Chung Yuan Christian University
+					</div>
+				</a>
+				<!--分隔-->
+				<a href="http://house.cycu.edu.tw/" target="_blank">
+					<div class="good_link">
+						<div class="good_link_icon"></div>中原好宿網 CYCU HOUSE
+					</div>
+				</a>
+				<!--分隔-->
+				<a href="https://mnya.tw/yo/word/tag/chung-yuan-food" target="_blank">
+					<div class="good_link">
+						<div class="good_link_icon"></div>中原美食 - 標籤 - 萌芽悠遊網 - 萌芽網頁
+					</div>
+				</a>
+				<!--分隔-->
+				<a href="https://mnya.tw/cc/word/1197.html" target="_blank">
+					<div class="good_link">
+						<div class="good_link_icon"></div>中壢車站來往中原大學(走路、公車、YouBike)交通路線指導(附路線圖、生活指引) - 萌芽綜合天地 - 萌芽網頁
+					</div>
+				</a>
+				</ul>
+			</div>
+			<!--好站連結結束-->
+			<h1 class="flex-container-h1">成員介紹</h1>
+			<!--成員介紹開始-->
+			<div class="member-box">
+				<div class="member-box-left">
+					<div class="member-img"><img src="img/member-feng.jpg"></div>
+					<h1>馮正淇－Feng, Cheng-Chi</h1>
+				</div>
+				<p>📝 <b>自我介紹：</b>您好，我是萌芽系列網站（Mnya Series Website）的站長&創始人，可以叫我「萌芽站長」。我的興趣與專長有登山、觀察地形、攝影、旅遊、網頁設計&架設&經營、動畫製作、圖片處理、資料彙整等等。<br>
+					💬 <b>製作心得：</b>這次因為多媒體程式設計這門課，讓我有機會展現自己本來就已經精通的網頁領域，並且在這當中學習更多從前學不到的東西，過去都是自己一個人玩網頁，這次同儕的加入讓專案變得非常有意思，我也在這期間教同學一些關於網頁撰寫的技巧與工具。<br>
+					這個網頁是期中專案的作品，七成的主架構與全部的行動版（RWD）由我負責，希望用簡潔的介面帶大家認識中原大學周遭食衣住行的資訊，特別是「食」的部分，因為學校周遭是著名的夜市與商圈，吃的東西相對多，所以我們在這部分也花了較多的時間與版面呈現。本來想要將行動版地圖隱藏，但研究後還是將其保留，HTML MAP 也透過 JS 達到自適應的效果，讓所有裝置都可以透過地圖連往想查看的區域（網頁）。<br>
+					希望這個網站能實際幫助到更多人，我也預計會在期中專案報告完成後，將網站做些微調後正式上線於自己的伺服器，不浪費難得的網頁作品。</p>
+			</div>
+			<!--分隔-->
+			<div class="member-box">
+				<div class="member-box-right">
+					<div class="member-img"><img src="img/member-lee.jpg"></div>
+					<h1>李宛毓－WanYu Lee</h1>
+				</div>
+				<p>📝 <b>自我介紹：</b>大家好！我的興趣是做手工藝，喜歡新鮮的事物，好奇心很強，一旦下定決心會努力達成目標。學業上擅長的是數學邏輯方面，目前想學寫程式、網頁。<br>
+					💬 <b>製作心得：</b>這次的專案目標是讓新生們可以更了解中原附近的食衣住行，而我所負責的部分是網頁中每個小門的部分，每個小門會有食衣住行，我在製作的過程中其實花了很多時間，因為是第一次寫這麼有主題的網頁，有些想法要做出來其實是很不容易的。我還有製作影片，我們有討論過影片的大綱，主要是以中原學生的角度來看，我們用第一人稱的視角拍攝，因為我們拍了很多，最後我在剪影片的時候必須好好分類、挑選，而且因為是第一人稱視角去拍的，所以畫面很晃，但我調過後有好一點點了。因為時間的關係，有些不錯的畫面沒有用到很可惜。我在專案中學到很多，像是排版、使用繪圖軟體、使用影片剪輯軟體等等，也希望我們做的網頁可以幫助到更多的新生們。
+				</p>
+			</div>
+			<!--分隔-->
+			<div class="member-box">
+				<div class="member-box-left">
+					<div class="member-img"><img src="img/member-joshua.jpg"></div>
+					<h1>齊執先－Joshua</h1>
+				</div>
+				<p>📝 <b>自我介紹：</b>哈嘍！ 我是齊執先<br>
+					我是一個很怕生的男生 可是跟熟悉的朋友就會很放開自己 喜歡聽音樂 玩電腦 特別喜歡跟朋友一起享受遊戲樂趣。<br>
+					💬 <b>製作心得：</b>透過這次的多媒體實作，我開始學習到一個網頁的建立從0到完成是需要花費多少的心血去完成，在這次的設計過程當中，我們常常因為版面的配置或是一些頁面的圖案表框下了很多的工夫，透過這次的活動，讓我們在這堂多媒體的受益良多，而我也在這次的課程當中學到很多，也過得相當充實，雖然說我沒辦法跟有做過網頁的同學一樣能夠在網頁編輯的程式馬上出太多的力，可是從蒐集資料和拍攝影片，將蒐集到的素材運用在這次的報告當中我感到很有參與感也很充實，團隊合作是讓我們在這緊湊的時間當中能夠順利完成這次網站的原因之一，我相信之後我們會越來越進步。</p>
+			</div>
+			<!--分隔-->
+			<div class="member-box">
+				<div class="member-box-right">
+					<div class="member-img"><img src="img/member-cheng.jpg"></div>
+					<h1>程嬿伃－Cheng yen yu</h1>
+				</div>
+				<p>📝 <b>自我介紹：</b>日常喜好是 閱讀，繪畫，彈吉他。<br>
+					💬 <b>製作心得：</b>我們這次的想法是，做出一個能夠讓新進中原的朋友，能夠快速地適應中原的生活，無論是在食物或是交通方面都有很好的整理，我擔任的是美工的部份，各種有關於美感，像是網頁排版和地圖繪製，將地圖放進網頁裡面，讓使用者點擊的時候能夠連結至各個小門的網頁，能夠讓使用者更清楚
+					而這次的專案，重要的是團隊分工和溝通，每個組員都有自己擅長的項目，透過溝通交流彼此的想法，我們才能夠更優化我們得網頁，讓網站更完善，在交流之後也讓我學到了很多關於上課沒有教的網頁知識。</p>
+			</div>
+			<!--成員介紹結束-->
+			<h1 class="flex-container-h1">訪客回饋</h1>
+			<!--訪客回饋開始-->
+			<div class="feedback">
+				<form method="post" action="mailto:qwe987299@gmail.com?subject=訪客回饋" enctype="text/plain">
+					<b>性別：</b><input name="gender" type="radio" value="男" />男<input name="gender" type="radio" value="女" />女<br>
+					<b>是否為新生？</b><input name="freshman" type="radio" value="是" />是<input name="freshman" type="radio" value="否" />否<br>
+					<b>平常上下學是：</b><input name="transportation" type="checkbox" value="搭公車" />搭公車<input name="transportation" type="checkbox" value="搭高鐵" />搭高鐵<input name="transportation" type="checkbox" value="騎UBIKE" />騎UBIKE<input name="transportation" type="checkbox" value="住宿舍" />住宿舍 其他：<input name="transportation" type="text" /><br>
+					<b>您認為我們網頁的舒適程度？</b><input name="satisfaction" type="radio" value="極好" />極好<input name="satisfaction" type="radio" value="還可以" />還可以<input name="satisfaction" type="radio" value="沒意見" />沒意見<input name="satisfaction" type="radio" value="有點差" />有點差<input name="satisfaction" type="radio" value="極差" />極差<br>
+					<b>請問您覺得「中原食衣住行」網站有幫助到您嗎？</b><input name="helpful to you?" type="radio" value="有" />有<input name="helpful to you?" type="radio" value="沒有" />沒有<br>
+					<b>請問您從中獲取到什麼有意義的內容？</b><input name="get meaningful content?" type="text" /><br>
+					<b>對「中原食衣住行」網站的建議或需改進的地方？</b><input name="suggestion" type="text" /><br>
+					<b>其他（想對我們說的話）：</b><br><textarea name="note" rows="2" wrap="hard"></textarea><br>
+					<input class="feedback-button" type="submit" value="送出" />
+					<input class="feedback-button" type="reset" value="重設" />
+				</form>
+			</div>
+			<!--訪客回饋結束-->
+		</div>
+		<!--主內容結束-->
+		<footer>中原食衣住行© 2018<br>祝您有個美好的一天！</footer>
+	</article>
+	<script>
+		//閱讀進度條
+		$(function() {
+
+			$('body').scrollgress({
+				height: '4px',
+				color: '#ea0000cc',
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>
